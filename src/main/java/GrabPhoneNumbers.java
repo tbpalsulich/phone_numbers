@@ -28,8 +28,10 @@ public class GrabPhoneNumbers {
     public static void main(String[] args){
         if (args.length != 1) {
             System.err.println("Usage `java GrabPhoneNumbers [corpus]");
+            return;
         }
         final File folder = new File(args[0]);
+        System.out.println("Searching " + folder.getAbsolutePath() + "...");
         processFolder(folder);
         System.out.println(phoneNumbers.toString());
         System.out.println("Parsed " + successfulFiles + "/" + (successfulFiles + failedFiles));
