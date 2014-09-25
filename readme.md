@@ -1,5 +1,6 @@
 Grab Phone Numbers
 ==================
+Get a list of all of the phone numbers from all of the files in a directory using Apache Tika.
 
 How to run:
 
